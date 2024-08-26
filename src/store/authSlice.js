@@ -11,10 +11,10 @@ const authSlice = createSlice({
     reducers: {
         login: (state, action) => {
             const { userData } = action.payload;
-            console.log("Action payload userData:", action.payload); // Check if this is defined
+            // Check if this is defined
             state.status = true;
             state.userData = userData;
-            console.log("User logged in with data:", userData); 
+            
         },
         logout: (state) => {
             state.status = false;
